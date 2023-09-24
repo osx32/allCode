@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #forCar{
+            margin:5px;
+            border:5px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <p id="forCar"></p>
+<script>
+    class Car{
+        constructor(name,type,model){
+            this.name=name;
+            this.type=type;
+            this.model=model;
+        }
+        style(vehicleStyle){
+            this.vehicleStyle=vehicleStyle;
+        }
+        
+    }
+    const Mercedes = new Car('Wersstapen','Benz',2020);
+    Mercedes.vehicleStyle = 'Spider';
+
+    const Ford = new Car('Miles','GT',1980);
+    Ford.vehicleStyle = 'String Blue';
+    
+    document.getElementById('forCar').innerHTML='<table> <tr> <th>Car Driver</th> <th>Car Type</th> <th>Car Model</th> <th>Car Style</th> </tr>'+
+        '<tr> <td>'+`${Mercedes.name}`+'</td><td>'+`${Mercedes.type}`+'</td><td>'+`${Mercedes.model}`+'</td><td>'+`${Mercedes.vehicleStyle}`+'</td></tr>'+
+        '<tr> <td>'+`${Ford.name}`+'</td><td>'+`${Ford.type}`+'</td><td>'+`${Ford.model}`+'</td><td>'+`${Ford.vehicleStyle}`+'</td></tr></table>';
+        
+
+
+    
+    
+
+
+
+
+
+
+</script>
+</body>
+</html>

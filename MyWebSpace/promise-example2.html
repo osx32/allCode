@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /*
+        function myDisplayer(some){
+            document.getElementById('demo').innerHTML = some;
+        }
+        let myPromise = new Promise(function(myResolve, myReject){
+        let x = 0;
+        if(x == 0){
+            myResolve('OK');
+        }
+        else{
+            myReject('Error');
+        }
+        });
+        myPromise.then(
+        function(value){myDisplayer(value);},
+        function(error){myDisplayer(error);}
+        );
+        */
+
+        //   NORMAL SETTIMEOUT
+        /*
+        setTimeout(function() {myFunction('I love you!!');},3000);
+
+        function myFunction(value){
+            document.getElementById('demo').innerHTML = value;
+        }
+        */
+
+
+        //    SETTIMEOUT WITH PROMISE
+        /*
+        let myPromise = new Promise(function(myResolve, myReject){
+            setTimeout(function(){myResolve('I love you');},3000);
+        });
+        myPromise.then(function(value){
+            document.getElementById('demo').innerHTML = value;
+        });
+        */
+
+
+        /*
+        // NORMAL  CALLBACK
+        function myDisplayer(some){
+            document.getElementById('demo').innerHTML = some;
+        }
+
+        function getFile(myCallback){
+            let req = new XMLHttpRequest();
+            req.open('GET','https://tr.wikipedia.org/wiki/Dosya:McLaren_Senna_IMG_3279.jpg')
+                if (req.status == 200){
+                    myCallback(req.responseText);
+                }
+                else{
+                    myCallback('Error: '+req.status);
+                }
+            
+            req.send();
+        }
+        getFile(myDisplayer);
+        */
+
+
+        // CALLBACK WITH PROMISE
+        function myDisplayer(some){
+            document.getElementById('demo').innerHTML = some;
+        }
+        let myPromise = new Promise(function(myResolve, myReject){
+            let req = new XMLHttpRequest();
+            req.open('GET','C:/Users/kaaan/OneDrive/Resimler/wallpaper/sea-the-sky-water-clouds-wallpaper-preview');
+            req.onload = function(){
+                if (req.status == 200){
+                    myResolve(req.response);
+                }
+                else{
+                    myReject('File not found');
+                }
+            };
+            req.send();
+        });
+        myPromise.then(
+            function(value){myDisplayer(value);},
+            function(error){myDisplayer(error);}
+        );
+
+
+
+
+    </script>
+</body>
+</html>
+
