@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        // The new Map() Method
+        // You can create a Map by passing an Array to the new Map() constructor:
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oraanges", 200]
+        ]);
+        */
+
+
+        /*
+        // The set() Method
+        // You can add elements to a Map with the set() method:
+        // Create a Map
+        const fruits = new Map();
+
+        // Set Map Values
+        fruits.set('apples', 500);
+        fruits.set('bananas', 300);
+        fruits.set('oranges', 200);
+
+        // The set() method can also be used to change existing Map values:
+        fruits.set('apples', 200);
+        */
+
+
+
+        /*
+        const fruits = new Map([
+            ['apples', 500],
+            ['bananas', 300],
+            ['oranges', 200]
+        ]);
+        // The get() Method
+        // The get() method gets the value of a key in a Map:
+        let result = fruits.get('apples');  // Returns 500
+        */
+
+
+
+        /*
+        const fruits = new Map([
+            ['apples', 500],
+            ['bananas', 300],
+            ['oranges', 200]
+        ]);
+        // The size Property
+        // The size property returns the number of elements in a Map:
+        let result = fruits.size;
+        */
+
+
+
+        /*
+        const fruits = new Map([
+            ['apples', 500],
+            ['bananas', 300],
+            ['oranges', 200]
+        ]);
+        // The delete() Method
+        // The delete() method a Map element:
+        fruits.delete('apples');
+        */
+
+
+
+        /*
+        const fruits = new Map([
+            ['apples', 500],
+            ['bananas', 300],
+            ['oranges', 200]
+        ]);
+        // The has() Method
+        // The has() method returns true if a key exists in a Map:
+        let result = fruits.has('apples');
+        fruits.delete('apples');
+        let result2 = fruits.has('apples');
+        */
+
+
+
+        /*
+        // The forEach() Method
+        // The forEach() method calls a function for each key/value pair in a Map:
+        const fruits = new Map([
+            ['apples', 500],
+            ['bananas', 300],
+            ['oranges', 200]
+        ]);
+        // List all entries
+        let text = '';
+        fruits.forEach(function(value, key) {
+            text += key + ' = ' + value + ' ';
+        });
+        */
+
+
+
+
+        // The entries() Method
+        // The entries() method returns an iterator object with the [key, values] in a Map:
+        const car = new Map([
+            ['Fiat', 1000],
+            ['Chevrolet', 2000],
+            ['BMW', 3000]
+        ]);
+        // List all entries
+        let text = '';
+        for(const x of car.entries()) {
+            text += x;
+        }
+        console.log(text);
+
+
+
+
+    </script>
+
+
+</body>
+</html>

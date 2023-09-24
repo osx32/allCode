@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+/*
+console.log(typeof "John");             // Returns "string"
+console.log(typeof 3.14);               // Returns "number"
+console.log(typeof NaN);                // Returns "number"
+console.log(typeof false);              // Returns "boolean"
+console.log(typeof [1,2,3,4]);          // Returns "object"
+console.log(typeof {name:'John', age:34}); // Returns "object"
+console.log(typeof new Date());         // Returns "object"
+console.log(typeof function() {});      // Returns "function"
+console.log(typeof myCar);              // Returns "undefined"
+console.log(typeof null);               // Returns "object"
+*/
+
+
+
+
+/*
+// Primitive Data
+// A primitive data value is a single simple data value with no additional properties and methods.
+console.log(typeof "John");    // Returns "string" 
+console.log(typeof 3.14);      // Returns "number"      
+console.log(typeof true);      // Returns "boolean"
+console.log(typeof false);     // Returns "boolean"
+console.log(typeof x);         // Returns "undefined"   if x has no value
+*/
+
+
+
+
+/*
+// Complex Data
+// The typeof operator can return one of two complex types: function, object
+// The typeof operator returns "object" for objects, arrays, and null.
+// The typeof operator does not return "object" for functions.
+console.log(typeof {name:'John', age:34});
+console.log(typeof [1, 2, 3, 4]);
+console.log(typeof null);
+console.log(typeof function myFunc() {});
+*/
+
+
+
+// The Data Type of typeof
+// The typeofoperator is not a variable. It is an operator. Operators ( + - * / ) do not have any data type.
+// But, the typeof operator always returns a string (containing the type of the operand).
+
+
+
+/*
+// The constructor Property
+// The constructor property returns the constructor function for all JavaScript variables.
+console.log("John".constructor);  // Returns function String()  {[native code]}
+console.log((3.14).constructor);  // Returns function Number()  {[native code]}
+console.log(false.constructor);   // Returns function Boolean() {[native code]}
+console.log([1, 2, 3, 4].constructor);  // Returns function Array()   {[native code]}
+console.log({name:'John', age:34}.constructor);  // Returns function Object()  {[native code]}
+console.log(new Date().constructor);      // Returns function Date()    {[native code]}
+console.log(function () {}.constructor);   // Returns function Function(){[native code]}
+*/
+
+
+/*
+// You can check the constructor property to find out if an object is an Array (contains the word "Array"):
+const fruits = ['Banana', 'Orange', 'Apple'];
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+console.log(isArray(fruits));
+// Or even simpler, you can check if the object is an Array function:
+function isArray(myArray) {
+    return myArray.constructor === Array;
+}
+console.log(isArray(fruits));
+*/
+
+
+
+
+/*
+// You can check the constructor property to find out if an object is a Date (contains the word "Date"):
+const myDate = new Date();
+function isDate(myDate) {
+    return myDate.constructor.toString().indexOf('Date') > -1;
+}
+console.log(isDate(myDate));
+// Or even simpler, you can check if the object is a Date function:
+function isDate(myDate) {
+    return myDate.constructor === Date;
+}
+*/
+
+
+
+/*
+// Undefined
+// In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+let car;  // Value, is undefined, type is undefined
+console.log(car);
+// Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+car = undefined; // Value is undefined, type is undefined
+*/
+
+
+
+/*
+// Empty Values
+// An empty value has nothing to do with undefined.
+// An empty string has both a legal value and a type.
+let car = "";  // The value is "", the typeof is "string"
+console.log(typeof car);
+*/
+
+
+
+/*
+// Null
+// In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+// Unfortunately, in JavaScript, the data type of null is an object.
+// You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+// You can empty an object by setting it to null:
+let person = { firstname: 'Joe', age: 50, eyeColor: "blue" };
+person = null;   // Now value is null, but type is still an object
+console.log(person);
+*/
+
+
+/*
+// You can also empty an object by setting it to undefined:
+let person = {firstName:'John', lastName:'Doe', age:50 , eyeColor:'blue'};
+person = undefined;   // Now both value and type is undefined 
+console.log(person);
+*/
+
+
+
+/*
+// Difference Between Undefined and Null
+// undefined and null are equal in value but different in type:
+console.log(typeof undefined);   // undefined
+console.log(typeof null);        // object
+
+console.log(null === undefined);  // false
+console.log(null == undefined);   // true
+*/
+
+
+
+/*
+// The instanceof Operator
+// The instanceof operator returns true if an object is an instance of the specified object:
+const cars = ['Saab', 'Volvo', 'BMW'];
+console.log(cars instanceof Array);
+console.log(cars instanceof Object);
+console.log(cars instanceof String);
+console.log(cars instanceof Number);
+*/
+
+
+
+
+
+// The void Operator
+// The void operator evaluates an expression and returns undefined. This operator is often used
+// to obtain the undefined primitive value, using "void(0)"(useful when evaluating an expression
+// without using the return value).
+        
+    </script>
+    <a href="javascript:void(0);">
+        Useless link
+    </a>
+    <a href="javascript:void(document.body.style.backgroundColor='red');">
+        Click me to change the background color of body to red
+    </a>
+
+
+    <p id="demo"></p>
+</body>
+</html>
