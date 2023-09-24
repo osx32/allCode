@@ -1,0 +1,11 @@
+{
+  "name": "npm_project",
+  "version": "1.0.0",
+  "description": "firstNpmTry",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fatih",
+  "license": "ISC"
+}
