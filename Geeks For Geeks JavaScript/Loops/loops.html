@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 10; i++){
+            document.write("Hello World!<br>");
+        }
+
+        //JavaScript program to illustrate infinite loop
+            // infinite loop because condition is not apt
+            // condition should have been i>0.
+        for(var i = 5; i != 0;i++){
+            document.write(i);
+        }    
+        var x = 5;
+        // Infinite loop because update statement 
+        // is not provided
+        while (x == 5){
+            document.write("In the loop");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

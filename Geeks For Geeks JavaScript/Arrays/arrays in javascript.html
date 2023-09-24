@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /*
+        // 1.Initalizing while declaring:
+        var house = ["1BHK", "2BHK", "3BHK", "4BHK"];
+        */
+
+
+        /* 
+        // 2.Using the JavaScript keyword "new":
+        // Initializing while declaring
+        // Creates an array having elements 10, 20, 30, 40, 50
+        var house = new Array(10, 20, 30, 40, 50);
+        
+        // Creates an array of 5 undefined elements
+        var house1 = new Array(5);
+
+        // Creates an array with element 1BHK
+        var home = new Array("1BHK");
+
+        console.log(house);
+        console.log(house1);
+        console.log(home);
+        */
+
+
+        /*
+        //Line breaks and spaces are not important in the declaration of the array as
+        // it can span multiple lines:
+        var fruits = ["orange",
+                      "banana",
+                      "apple"
+                     ];
+        */
+
+
+        /*
+        //We can also update after initialization:
+        //Creates an array of 4 undefined elements
+        var house1 = new Array(4);
+
+        //Now assign values
+        house1[0] = "1BHK";
+        house1[1] = "2BHK";
+        house1[2] = "3BHK";
+        house1[3] = "4BHK";
+        console.log(house1);
+        */
+
+
+        /*
+        // An array in JavaScript can hold different elements that can store Numbers,
+        // Strings, and Boolean in a single array:
+        //Storing number, boolean, strings in an Array
+        var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+        console.log(house);
+        */
+
+
+        /*
+        //Accessing array elements:
+        //Accessing Array Elements of an Array in JavaScript are indexed from 0 so we
+        //we can access array elements as follows:
+        var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+        console.log(house[0]+" cost= "+house[1]);
+        var cost_1BHK = house[1];
+        var is_for_rent = house[5];
+        console.log("Cost of 1BHK = "+ cost_1BHK);
+        console.log("Is house for rent = "+ is_for_rent);
+        */
+
+
+
+        /*
+        //  The length property of an Array returns the length of an Array.
+        //The length of an Array is always one more than the highest index of an Array:
+        var house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+        //len contains the length of the array
+        var len = house.length;
+        for (var i = 0; i < len; i++)
+            console.log(house[i]);//Output 1BHK
+        */
+
+
+        /*
+        //     Accessing Full array in the JavaScript
+        // By referring to the array name in JavaScript the full array can be accessed:
+        var fruits = ["orange", "banana", "apple"];
+        document.getElementById("demo").innerHTML = fruits;
+        */
+
+
+        /*
+        //Methods of Array in the JavaScript
+        //JavaScript arrays have built-in methods:
+        var id = [5, 1, 3, 7];
+        id.sort();        //This method sorts the array
+        id.length;        //This method returns the number of elements
+        */
+
+
+        /*
+        //Looping over Array elements in the JavaScript:
+        //In this example for loop is used:
+        var id = [5, 1, 3, 7];
+        let size = id.length;
+        for(let i=0; i < size; i++)
+            console.log(id[i]);
+        */
+
+
+
+        //Inserts new elements:
+        //The two ways to add nnew elements in the javascript array:
+        var id = [5, 1, 3, 7];
+        id.push(10);      //Method1
+
+        id[id.length] = 10;
+
+
+
+
+    </script>
+
+</body>
+</html>

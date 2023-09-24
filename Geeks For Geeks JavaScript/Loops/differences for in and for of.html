@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expalin the differences between for(..in) and for(..of) statment in JavaScript</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        /*
+        var person = {
+            firstName: "GeeksforGeeks",
+            lastName: "<br>A computer Science Portal for Geeks ",
+            rank: 43
+        };
+        var userId = "";
+        var i;
+        for (i in person) {
+            userId += person[i];
+        }
+        document.getElementById("demo1").innerHTML = userId;
+        */
+    </script>
+
+    <script>
+        
+        var text = [
+            "GeeksforGeeks",
+            " A Computer Science Portal for Geeks ",
+            "43"
+        ];
+        var userId = "";
+        var i;
+        for (i of text){
+            userId+=i;
+        }
+        document.getElementById("demo2").innerHTML = userId;
+        
+</script>
+    
+
+</body>
+</html>

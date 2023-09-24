@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p id="firstpar"></p>
+    <script>
+        /*let object_name={
+            key_name:"value"
+        };
+        
+        
+        //JavaScript code demonstrating a simple object
+        let school = {
+            name : "Vivekanand School",
+            location:"Delhi",
+            established:"1971",
+            displayInfo:function(){
+                console.log(`${school.name} was established 
+                  in ${school.established} at ${school.location}`);
+            }
+
+        }
+        school.displayInfo();
+        
+        let school = {
+        name: 'Vivekananda School',
+        location : 'Delhi',
+        established : '1971',
+        20 : 1000,
+        displayInfo : function(){
+            console.log(`The value of the key 20 is ${school['20']}`);
+        }
+    }
+    school.displayInfo();  
+
+    
+    let school={
+        "school name":"Vivekanada School"
+    };
+    
+    
+    //Bracket notation
+    let school={
+        name:'Vivekananda School',
+        displayInfo:function(){
+            console.log(`${school.name.split(' ')[0]}`);
+        }
+    }
+    school.displayInfo();//Vivekananda
+
+
+    //hasOwnProperty code in js
+    const object1=new Object();
+    object1.property1=42;
+
+    console.log(object1.hasOwnProperty('property1'));//true
+
+    
+    var obj={
+        member1:"value1",
+        member2:"value2"
+    };
+    
+    const school=new Object();
+    school.name='Vivekanada school';
+    school.location='Delhi';
+    school.established=1971;
+
+    school.displayInfo=function(){
+        console.log(`${school.name} was established in ${school.established} at ${school.location}`);
+    }
+    school.displayInfo();
+    
+
+    function Vehicle(name,maker){
+        this.name=name;
+        this.maker=maker;
+    }
+    let car1=new Vehicle('Fiesta','Ford');
+    let car2=new Vehicle('Santa Fe','Hyundai');
+    console.log(car1.name); //Output: Fieasta
+    console.log(car2.name); //Output: Santa Fe
+    
+    let footballers={
+        position:"Striker"
+    }
+    let footballer1=Object.create(footballers);
+
+        //Output : Striker
+    console.log(footballer1.position);
+    
+    let school={
+        name:"Vivekanada",
+        location:"Delhi",
+        established:1971,
+        20:1000,
+        displayInfo:function(){
+            console.log(`${school.name} was established in ${school.established} at ${school.location}`);
+        }
+    }
+    console.log(school.name);
+    console.log(school.established);
+    console.log(school.displayInfo());
+
+    
+    let school={
+        name:"Vivekanada School",
+        location:"Delhi",
+        established:1995,
+        20:1000,
+        displayinfo:function(){
+            document.write(`${school.name} was established in ${school.established} at ${school.location}`);
+        }
+    }
+    //Output : Vivekanada School
+    console.log(school['name']);
+
+    //Output : 1000
+    console.log(school['20']);
+    
+
+    let key="first name" somePerson[key]="Name Surname"
+    
+    
+    let person={
+        gender:"male"
+    }
+    var person1=Object.create(person);
+    person1.name="Adam";
+    person1.age=45;
+    person1.nationality="Australian";
+
+    for(let key in person1){
+    //Output : name, age, nationality
+    //and gender
+        console.log(key);
+    }
+    
+
+    let obj1={
+        propfirst:"Name"
+    }
+
+    //Output : None
+    console.log(obj1.propfirst);
+    delete obj1.propfirst
+
+    //Output : undefined
+    console.log(obj1.propfirst);
+    */
+
+    let obj1={
+        propfirst:"Name"
+    }
+    //Output : Name
+    console.log(obj1.propfirst)
+        let obj2=Object.create(obj1);
+
+    //Output: Name
+    console.log(obj2.propfirst);
+    
+    //Output : true.
+    console.log(delete obj2.propfirst); 
+
+        //Surprisingly Note that will return true
+        //regardless of whether the deletion was successful
+
+        //Output : Name
+        console.log(obj2.propfirst);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

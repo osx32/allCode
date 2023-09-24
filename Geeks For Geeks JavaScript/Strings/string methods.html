@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+    <script>
+        /*
+        // JavaScript String Length Property
+        // JavaScript to illustrate length property 
+        function func() {
+            // length property for string
+            console.log("GFG".length);
+        }
+        func();
+        */
+
+
+
+        /*
+        // JavaScript slice(startIndex, endIndex) Method
+        // This method extracts a part of the string based
+        // on the given stating-index and ending-index and returns a new string.
+        var A = 'Geeks for Geeks';
+        b = A.slice(0, 5);
+        c = A.slice(6, 9);
+        d = A.slice(10);
+
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        */
+
+
+
+        /*
+        // JavaScript substring(startIndex, endIndex) Method
+        // This method returns the part of the given string 
+        // from the start index to the end index. Indexing start from zero (0).
+        var str = "Mind, Power, Soul";
+        var part = str.substring(6, 11);
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript substr(start, length) Method
+        // This method returns the specified number of characters from the 
+        // specified index from the given string. It basically extracts a part
+        // of the original string.
+        var str = "Mind, Power, Soul";
+        var part = str.substr(6, 5);
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript replace(replaceValue, replaceWithValue) Method
+        // This method replaces a part of the given string with another
+        // string or a regular expression. The original string will remain
+        // unchanged.
+        var str = "Mind, Power, Soul";
+        var part = str.replace("Power", "Space");
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript replaceAll(regexp | subsre, newSubstr | function) Method
+        // This method returns a new string after replacing all the matches 
+        // of a string with a specified string or a regular expression. The 
+        // original string is left unchanged after this operation.
+        var str = "Mind, Power, Power,  Soul";
+        var part = str.replaceAll("Power", "Space");
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript toUpperCase(stringVariable) Method
+        // This method converts all the characters present in the String to 
+        //upper case and returns a new String with all characters in upper case.
+        //This method accepts single parameter stringVariable string that you
+        //want to convert in upper case.
+        let gfg = 'GFG';
+        let geeks = 'stands-for-GeeksforGeeks';
+        console.log(geeks.toUpperCase(geeks));
+        */
+
+
+
+        /*
+        // JavaScript toLowerCase(stringVariable) Method
+        // This method converts all the characters present in the 
+        // so lowercase and returns a new string with all the characters in
+        // lowercase.
+        let gfg = 'GFG';
+        let geeks = 'stands-for-GeeksforGeeks';
+        console.log(geeks.toLowerCase(geeks));
+        */
+
+
+
+        /*
+        // JavaScript concat(objectOfString) Method
+        // This method combines the text of two strings and returns a new
+        //  combined or joined string. To concatenate two strings, we use
+        //  concat() method on one object of string and send another object
+        // of string as a parameter. This method accepts one argument. The
+        // variable contains text in double quotes or single quotes.
+        let gfg = 'GFG';
+        let geeks = ' stands for GeeksforGeeks';
+        // Accessing concat method on an object
+        // of String passing another object 
+        // as a parameter
+        console.log(gfg.concat(geeks));
+        */
+
+
+
+        /*
+        // JavaScript trim() method
+        // This method is used to remove either white spaces from the given 
+        // string. This method returns a new string with removed white spaces. 
+        // This method is called on a String object. This method doesn’t accept
+        // any parameter.
+        let gfg = 'GFG    ';
+        let geeks = 'stands-for-GeeksforGeeeks';
+        // Storing new object of string
+        // with removed white spaces
+        var newGfg = gfg.trim();
+        //Old length
+        console.log(gfg.length);
+        //New length
+        console.log(newGfg.length);
+        */
+
+
+        /*
+        // JavaScript trimStart() Method
+        // This method removes whitespace from the beginning of a string. The value 
+        // of the string is not modified in any manner, including any whitespace present
+        // after the string.
+        var str = "   soul";
+        console.log(str);
+        var part = str.trimStart();
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript trimEnd() Method
+        // This method removes white space from the end of a string. The value of the string 
+        // is not modified in any manner, including any white-space present before the string.
+        var str = "Soul     ";
+        console.log(str);
+        var part = str.trimEnd();
+        console.log(part);
+        */
+
+
+
+        /*
+        // JavaScript padStart() Method
+        // This method pad a string with another string until it reaches the 
+        // given length. The padding is applied from the left end of the string.
+        var stone = "Soul";
+        stone = stone.padStart(9, "Mind ");
+        console.log(stone);
+        */
+
+
+
+
+        /*
+        // JavaScript padEnd() Method
+        // This method pad a string with another string until it reaches the given
+        // length. The padding is applied from the right end of the string.
+        var stone = 'Soul';
+        stone = stone.padEnd(10, " Power");
+        console.log(stone);
+        */
+
+
+
+        /*
+        // JavaScript charAt(indexOfCharacter) Method
+        // This method returns the character at the specified index. String in 
+        // JavaScript has zero-based indexing.
+        let gfg = 'GeeksforGeeks'; 
+        let geeks = 'GfG is the best platform to learn and\n'+
+                    'experience Computer Science.';
+        // Print the string as it is
+        console.log(gfg);
+        console.log(geeks);
+        // As string index starts from zero
+        // It will return first character of string
+        console.log(gfg.charAt(0));
+        console.log(geeks.charAt(5));
+        */
+
+
+
+        /*
+        // JavaScript charCodeAt(indexOfCharacter) Method
+        // This method returns a number that represents the Unicode value of the
+        // character at the specified index. This method accepts one argument.
+        let gfg = 'GeeksforGeeks';
+        let geeks = 'GfG is the best platform\n\
+                    to learn and experience\n\
+                    Computer Science.';
+        // Return a number indicating Unicode
+        // value of character at index 0 ('G')
+        console.log(gfg.charCodeAt(0));
+        console.log(geeks.charCodeAt(5));
+        */
+
+
+
+
+        /*
+        // JavaScript split(character) Method
+        // This method splits the string into an array of sub-strings. This method 
+        // returns an array. This method accepts a single parameter character on which 
+        // you want to split the string.
+        let gfg = 'GFG';
+        let geeks = 'stands-for-GeeksforGeeks';
+        //Split string on '-'.
+        console.log(geeks.split('-'));
+        */
+
+
+
+    </script>
+    
+</body>
+</html>

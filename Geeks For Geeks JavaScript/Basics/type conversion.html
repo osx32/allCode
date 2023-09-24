@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        console.log("2"+"3");
+        console.log("3"-"1");
+        //here + operator stands for string concatenation in this case.
+        //But "3" - "1" gives output 2 by using Implicit Conversion.
+
+        document.write('("3" - "1") = '+ ("3" - "1") + "<br>");
+        document.write('("3" - 1) = ' + ("3" - 1) + "<br>");
+        document.write('("3" * "2") = ' + ("3" * "2")+"<br>");
+        document.write('("3" % "2") = ' + ("3" % "2")+"<br>");
+        document.write('("3" + null) = '+ ("3" + null) + "<br>");
+        */
+
+        /*
+        var v=1555;
+        var s=String(v);
+        console.log(s); //now is contains "1555".
+        */
+
+        /*
+        var v=1555;
+        var s=v.toString();
+        console.log(s);
+        */
+
+        
+        //Number and date has been assigned
+        //to variable v and d respectively
+        var v=123;
+        var d=new Date('1995-12-17T03:24:00');
+
+        //Conversion of number to string
+        document.write(" String(v) = "+String(v)+"<br>");
+
+        //Conversion of number to string
+        document.write(" String(v + 11) = " + String(v + 11)+ "<br>");
+        document.write(" String( 10 + 10) = " + String(10 + 10) + "<br>");
+
+        //Conversion of boolean value to string
+        document.write(" String(false) = "+String(false) + "<br>");
+
+        //Conversion of Date of string
+        document.write(" String(d) = " + String(d) + "<br>");
+        
+
+        /*
+        var s="144";
+        var n=Number(s);
+        */
+       
+        /*
+        //Number and date has been assigned
+        //to variable v and d respectively
+        var v="144";
+        var d=new Date('1995-12-17T03:24:00');
+
+        //Conversion of string to number
+        document.write(" Number(v) = " + Number(v) + "<br>");
+
+        //Conversion of boolean value to number
+        document.write("Number(false) = "+Number(false)+"<br>");
+        document.write("Number(true) = "+Number(true)+"<br>");
+
+        //Conversion of date to nmber
+        document.write(" Number(d) = "+Number(d)+"<br>");
+        */
+
+        //Empty string assigned
+        var v="";
+
+        //White space assigned
+        var d=" ";
+
+        //Non-number string assigned
+        var s="GeeksforGeeks";
+
+        //Printing converted values of number
+        document.write("Number(v) = "+Number(v)+"<br>");
+        document.write("Number(d) = "+Number(d)+"<br>");
+        document.write("Number(s) = "+Number(s)+"<br>");
+
+
+    </script>
+    
+</body>
+</html>

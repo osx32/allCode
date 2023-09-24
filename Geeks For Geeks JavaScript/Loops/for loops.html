@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops In JavaScript</title>
+</head>
+<body>
+    <p id="gfg"></p>
+    <script>
+        /*
+        //JavaScript program to illustrate for loop
+        var x;
+        //for loop begins when x=2
+        //and runs till x <= 4
+        for(x = 2; x <= 4; x++){
+            console.log("Value of x: "+ x);
+        }
+        */
+
+
+        /*
+        var x = 2;
+        for( ; x <= 4; x++){
+            console.log("Value of x:" + x);
+        }
+        */
+
+
+        /*
+        var x = 2;
+        for( ; ; x++){
+            console.log("Value of x:" + x);
+            break;
+        }
+        */
+
+
+        /*
+        const subjects = ["Maths", "Science", "Polity", "History"];
+        var i = 0;
+        var len = subjects.length;
+        var gfg = "";
+        for(; i < len; ){
+            gfg += subjects[i+'']+"<br>";
+            //can be incrased inside loop
+            i++;
+        }
+        document.write(gfg);
+        */
+
+
+        /*
+        function GFG(){
+            var Platform = {fname:"geeks", Mname:"for", lname:"geeks"};
+            var text = "";
+            var x;
+            for(x in Platform){
+                text += Platform[x] + " ";
+            }
+            document.getElementById("gfg").innerHTML = text;
+        }
+        GFG();
+        */
+
+
+        const arr = [23, 54, 46, 3];
+        let gfg = "";
+        for(let i in arr){
+            gfg += arr[i] + '\n';
+        }
+        console.log(gfg);
+
+    </script>
+
+
+</body>
+</html>

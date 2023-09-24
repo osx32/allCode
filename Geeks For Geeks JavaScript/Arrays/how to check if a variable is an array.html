@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to check if a variable is an array in JavaScript</title>
+</head>
+<body>
+    <!--
+    <h1>isArray</h1>
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+    <b>
+        How to check if a variable
+        is an array in JavaScript?
+    </b>
+    <p>
+        Click on the button to check
+        if the variable is an array
+    </p>
+    <p>Output for string:
+    <div class="outputString">
+    </div>
+
+    <p>Output for number:
+    <div class="outputNumber">
+    </div>
+
+    <p>Output for array:
+    <div class="outputArray">
+    </div>
+
+    <button onclick="checkArray()">
+        Click here
+    </button>
+
+    <script>
+        function checkArray() {
+            let str = 'This is a string';
+            let num = 25;
+            let arr = [10, 20, 30, 40];
+            ans = Array.isArray(str);
+            document.querySelector(
+                '.outputString').textContent = ans;
+
+            ans = Array.isArray(num);
+            document.querySelector(
+                '.outputNumber').textContent = ans;
+
+            ans = Array.isArray(arr);
+            document.querySelector(
+                '.outputArray').textContent = ans;    
+        }
+    </script>
+    -->
+
+
+
+    <!--
+    <h1>instanceof</h1>
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+    <b>
+        How to check if a variable is
+        an array in JavaScript?
+    </b>
+    <p>
+        Click on the button to check
+        if the variable is an array
+    </p>
+    <p>Output for string:
+    <div class="outputString"></div>
+
+    <p>Output for number:
+    <div class="outputNumber"></div>
+
+    <p>Output for array:
+    <div class="outputArray"></div>
+
+    <button onclick="checkArray()">Click here</button>
+    <script>
+        function checkArray() {
+            let str = 'This is a array';
+            let num = 25;
+            let arr = [10, 20, 30, 40];
+            ans = str instanceof Array;
+            document.querySelector(
+                '.outputString').textContent = ans;
+
+            ans = num instanceof Array;
+            document.querySelector(
+                '.outputNumber').textContent = ans;
+                
+            ans = arr instanceof Array;
+            document.querySelector(
+                '.outputArray').textContent = ans;    
+        }
+    </script>
+    -->
+
+
+    <h1>Constructor</h1>
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+    <b>
+        How to check if a variable is
+        an array in JavaScript?
+    </b>
+    <p>
+        Click on the button to check
+        if the variable is an array
+    </p>
+    <p>Output for string:
+    <div class="outputString"></div>
+
+    <p>Output for number:
+    <div class="outputNumber"></div>
+
+    <p>Output for array:
+    <div class="outputArray"></div>
+
+    <button onclick="checkArray()">
+        Click here
+    </button>
+    <script>
+        function checkArray() {
+            let str = 'This is a string';
+            let num = 25;
+            let arr = [10, 20, 30, 40];
+
+            ans = str.constructor === Array;
+            document.querySelector(
+                '.outputString').textContent = ans;
+
+            ans = num.constructor === Array;
+            document.querySelector(
+                '.outputNumber').textContent = ans;
+
+            ans = arr.constructor === Array;
+            document.querySelector(
+                '.outputArray').textContent = ans;
+            
+
+
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>

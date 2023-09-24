@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        let a; //Declaration
+        a=100; //Assignment
+        console.log(a); //Usage
+        */
+
+        //Hoisting
+        /*
+        function codeHoist(){
+            a=10;
+            let b=50;
+        }
+        codeHoist();
+
+        console.log(a);  //10
+        console.log(b);  //Reference : b is not defined
+        */
+
+        /*
+        //var code(global)
+        console.log(name);  //undefined
+        var name='Mukul Latiyan';
+            //How interpreter see the above code
+            //var name;
+            //console.log(name); //undefined
+            //name='Mukul Latiyan';
+        */
+
+        /*
+        //Function scoped
+        function fun(){
+            console.log(name);
+            var name='Mukul Latiyan';
+        }
+        fun();//Undefined
+                //How interpreter see the above code 2.
+                //function fun(){
+                //    var name;
+                //    console.log(name);
+                //}
+                //fun(); //undefined
+        */
+
+
+        /*
+        //in order to avoid it
+        function fun(){
+            var name='Mukul Latiyan';
+            console.log(name);  //Mukul Latiyan
+        }
+        fun();
+        */
+
+
+        /*
+        //let example(global)
+        console.log(name);
+        let name='Mukul Latinyan'; //ReferenceError: name is not defined
+        */
+
+
+        /*
+        fun(); //Calling before declaration
+        function fun(){ //Declaring
+            console.log("Function is hoisted");
+        }
+        */
+
+
+        /*
+        fun() //Calling the expression
+        let fun=()=>{ //Declaring
+            var name='Mukul Latiyan';
+            console.log(name);
+
+        }
+        */
+
+
+        fun() //Calling the expression
+        var fun=()=>{  //Declaring
+            var name='Mukul Latiyan';
+            console.log(name);
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

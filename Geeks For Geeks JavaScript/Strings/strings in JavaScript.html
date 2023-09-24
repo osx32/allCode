@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings</title>
+</head>
+<body>
+    <p id="GFG"></p>
+    <script>
+        /*
+        // String written inside quotes
+        var x = "Welcome to GeeksforGeeks";
+        document.getElementById("GFG").innerHTML = x;
+        */
+
+
+        /*
+        // Methods to implement strings
+        // Use either single or double quotes to write strings. 
+        var x = "GeeksforGeeks";
+        var y = 'A computer science portal';
+        document.getElementById("GFG").innerHTML =
+            x + "<br>" + y;
+        */
+
+
+        /*
+        // Quotes can be used inside a string, as long as they don’t match 
+        // the quotes surrounding the string. 
+        var x = "'GeeksforGeeks'";
+        var y = "A 'computer' 'science' portal";
+        document.getElementById("GFG").innerHTML =
+            x + "<br>" + y;
+        */
+
+
+        /*
+        // Special characters: As stated above, the special character can’t use
+        // the same type of quotes within a string, but there is a solution. It
+        // uses the backslash escape character. The backslash ‘\’ escape 
+        // character turns special characters into normal string characters.
+        // The sequence (\”) is used to insert a double quote in a string.        
+        var x = "\"GeeksforGeeks\" A \'computer science\' portal";
+        document.getElementById("GFG").innerHTML = x;
+        */
+
+
+
+        /*
+        // String can also be written within a single quote. 
+        var x = '\"GeeksforGeeks\" A \'computer science\' portal';
+        document.getElementById("GFG").innerHTML = x;
+        */
+
+
+
+        /*
+        // String Length: The length of a string can be found 
+        // using the length property. 
+        var string = "GeeksforGeeks";
+        // Returns the length of string
+        document.getElementById("GFG").innerHTML = 
+                string.length;
+        */
+
+
+
+        /*
+        // String Breaking: Sometimes we need to divide the string for
+        // ease of understanding, the symbol \ can be used but it is not
+        // preferred. The preferred method is to use the + symbol between
+        // the two strings. 
+        document.getElementById("GFG").innerHTML = "Welcome"
+                    +  " to GeeksforGeeks!";
+        */
+
+
+
+        // Strings As Objects: Strings can be used as objects by using the 
+        // keyword ‘new’. 
+        // Declare a string
+        var x = "Great Geek";
+
+        //Declare an object
+        var y = new String("Great Geek");
+
+        document.getElementById("GFG").innerHTML = 
+                typeof x + "<br>" + typeof y;
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

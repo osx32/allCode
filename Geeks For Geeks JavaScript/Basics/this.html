@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      /*
+        function doSomething(a, b){
+            //adds a propone property to the Window object
+            this.propone="test value";
+        }
+
+        //function invocation
+        doSomething();
+        document.write(window.propone);
+        */
+
+      /*
+        function doSomething(){
+            //enable the strict mode
+            'use strict';
+
+            //logs undefined
+            document.write(this+'<br>')
+                function innerFunction(){
+                    //Also logs undefined, indicating that
+                    //strict mode permeates to inner function scopes
+                        document.write(this)
+                }
+            innerFunction();
+        }
+        //function invocation
+        doSomething();
+        */
+
+      /*
+        let person={
+            name:"John",
+            age:31,
+            logInfo:function(){
+                document.write(this.name+" is "+this.age+" years old ");
+            }
+        }
+        //logs John is 31 years old
+        person.logInfo()
+        */
+
+      /*
+        let add={
+            num:0,
+            calc:function(){
+                //logs the add object
+                document.write(this+' ')
+                    this.num
+                    +=1;
+                return this.num;
+            }
+        };
+        //logs 1
+        document.write(add.calc()+'<br>');
+        //logs 2
+        document.write(add.calc());
+        */
+
+      /*
+        let add={
+            num:0,
+            calc:function(){
+                //logs the add object
+                document.write(this+' ')
+
+                function innerfunc(){
+                    this.num+=1;
+
+                //logs the window object
+                document.write(this+' ');
+                return this.num
+                } return innerfunc();
+            }
+        };
+
+        //logs NaN
+        document.write(add.calc()+'<br>');
+
+        //logs NaN
+        document.write(add.calc());
+        */
+
+
+      /*  
+      let add={
+        num:0,
+        calc:function(){
+
+            //logs the add object
+            document.write(this+' ')
+
+            //using thisreference variable to 
+            //store the value of this
+            thisreference=this;
+
+            function innerfunc()
+            {
+                //using the variable to access the 
+                //context of the outer function
+                thisreference.num=thisreference.num+1;
+
+                //logs the add object
+                document.write(thisreference+' ');
+                return thisreference.num;
+
+            }
+            return innerfunc();
+        }
+
+      };
+      //logs 1
+      document.write(add.calc()+"<br>");
+
+      //logs 2
+      document.write(add.calc());
+      */
+
+      let people=function(name,age){
+        this.name=name;
+        this.age=age;
+
+        this.displayInfo=function(){
+            document.write(this.name+" is "+this.age+" years old");
+        }
+      }
+      let person1=new people('John',21);
+
+      //logsss John is 21 years old
+      person1.displayInfo();
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

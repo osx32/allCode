@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop In JavaScript</title>
+</head>
+<body>
+    
+    <h3>While Loop</h3>
+    <p id="GFG"></p>
+    <script>
+        /*
+        //Script to use while loop
+        var print="";
+        var val=1;
+        while(val < 6){
+            print += "Geeks " + val;
+            print += "<br>";
+            val += 1;
+        }
+        document.getElementById("GFG").innerHTML = print;
+        */
+
+
+        /*
+        var print = "";
+        var val = 0;
+        do{
+            print += "Geeks " + val;
+            print += "<br>";
+            val += 1;
+        }
+        while(val < 6);
+        document.getElementById("GFG").innerHTML = print;
+        */
+
+
+        var text = "";
+        var i = 1;
+        while(i < 6){
+            text += "Geeks " + i + "<br>";
+            i++;
+        }
+        document.getElementById("GFG").innerHTML = text;
+
+    </script>
+
+    <h3>Do While Loop</h3>
+    <p id="GFG1"></p>
+    <script>
+
+        var text = "";
+        var i = 1;
+        do {
+            text += "Geeks " + i + "<br>";
+            i++;
+        }
+        while(i < 6);
+        document.getElementById("GFG1").innerHTML  = text;
+    </script>
+
+    
+</body>
+</html>

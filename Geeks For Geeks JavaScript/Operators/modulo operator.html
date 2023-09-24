@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Number.prototype.mod = function(a){
+            //Calculate
+            return this % a;
+        }
+        */
+
+
+        /*
+        // JavaScript code to perform modulo (%)
+        // operation on positive numbers
+        // mod() function
+        Number.prototype.mod = function(a){
+            // Calculate
+            return this % a;
+        }
+        //Driver code
+        var x = 21;
+        var b = 4;
+
+        //Call mod() function
+        var result = x.mod(b);
+        
+        //Print result
+        console.log("The outcome is: " + result);
+        */
+
+
+        /*
+        //JavaScript code to perform modulo (%)
+        //operation on negative numbers
+        //Use mod() function 
+        Number.prototype.mod = function(a){
+            //Calculate
+            return this % a;
+        }
+        //Driver code
+        var x = -21;
+        var b = 4;
+        //Call mod()
+        var result = x.mod(b);
+        //Print result
+        console.log("The outcome is:" + result);
+        */
+
+
+        //JavaScript implemantation of above approach
+        //Use mod() function
+        Number.prototype.mod = function(b){
+            //Calculate
+            return ((this % b) + b) % b;
+        }
+        //Driver code
+        var x = -21;
+        var b = 4;
+        //call mod() function
+        var result = x.mod(b);
+        //Print result
+        console.log("The outcome is: " + result);
+        x = -33;
+        b = 5;
+        //Call mod() function 
+        result = x.mod(b);
+        //Print result
+        console.log("The outcome is:" + result);
+        x = -33;
+        b = 5;
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

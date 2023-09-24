@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+
+        //                    variable ?? default_value
+
+        function foo(bar){
+            bar = bar ?? 55;
+            document.write(bar);
+            document.write("<br>");
+        }
+        foo(); //55
+        foo(22); //22
+        
+
+
+        function foo(bar){
+            bar = bar || 42;
+            console.log(bar);
+        }
+        //Output : 42 
+        foo();
+        
+
+
+        function foo(bar){
+            bar = bar || 42;
+            console.log(bar);
+        }
+        // Output : 42
+        foo(0);
+        
+
+
+        function foo(bar){
+            bar = bar ?? 42;
+            console.log(bar);
+        }
+        foo(); //42
+        foo(0); //0
+        */
+
+
+        const foo = {
+            bar : 0
+        }
+        const valueBar = foo.bar ?? 42;
+        const valueBaz = foo.baz ?? 42;
+        //Value of bar: 0
+        console.log("Value of bar: ", valueBar);
+        //Value of bar: 42
+        console.log("Value of baz: ", valueBaz); 
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

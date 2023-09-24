@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimum way to compare strings in JavaScript?</title>
+</head>
+<body style="text-align:center;" is="body">
+    <!--
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1> String_1:
+    <input type="text" id="text1" name="tname1">
+    <br>
+    <br>  SString_2:
+    <input type="text" id="text2" name="tname2">
+    <br>
+    <br>
+    <button onclick="gfg_Run()">Compare</button>
+    <p id="GFG_DOWN" style="color:green;
+                    font-size: 20px;
+                    font-weight: bold;"> </p>
+    -->
+
+
+
+
+    <script>
+        
+        /*
+        // String localeCompare() method: This method compares two strings
+        // in the current locale. The current locale is based on the language
+        // settings of the browser. This method returns a number that tells
+        // whether the string comes before, after, or is equal to the 
+        // compareString in sort order.
+        
+        // This example compares the 2 string using localeCompare() method
+        // and returns 0, -1 or 1. This method does case-sensitive comparing.
+        
+        var str1 = document.getElementById("text1");
+        var str2 = document.getElementById("text2");
+        var el_down = document.getElementById("GFG_DOWN");
+        function gfg_Run() {
+            var a = str1.value;
+            var b = str2.value;
+            var ans = a.localeCompare(b);
+            var res = '"';
+            if(ans == -1) {
+                res = '"' + a + '" comes before "' + b + '"'; 
+            } else if(ans == 0) {
+                res = 'Both  string are same';
+            } else {
+                res = '"' + a + '" comes after "' + b + '"';
+            }
+            el_down.innerHTML = res;
+        }
+        */
+    </script>
+
+    
+    
+
+
+
+
+    <!--    
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1> String_1:
+    <input type="text" id="text1" anme="tname1">
+    <br>
+    <br>String_2:
+    <input type="text" id="text2" name="tnaame2">
+    <br>
+    <br>
+    <button onclick="gfg_Run()">Compare</button>
+    <p id="GFG_DOWN" style="color: green;
+                            font-size: 20px;
+                            font-weight: bold;"></p>
+
+    -->
+
+    <script>
+        /*
+        // This example compares the 2 string by writing a condition which 
+        // returns 0, -1, or 1 depending on the comparison. This method also
+        // does case-sensitive comparing.
+        var str1 = document.getElementById("text1");
+        var str2 = document.getElementById("text2");
+        var el_down = document.getElementById("GFG_DOWN");
+        function gfg_Run() {
+            var a = str1.value;
+            var b = str2.value;
+            var ans = a < b ? -1 : (a > b ? 1 : 0);
+            var res = "";
+            if(ans == -1) {
+                res = '"' + a + '" comes before "' + b + '"';
+            } else if(ans == 0) {
+                res = 'Both string are same';
+            } else {
+                res = '"' + a + '" comes after "' + b + '"';
+            }
+            el_down.innerHTML = res;
+        }
+        */
+    </script>
+    
+
+
+
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1> String_1:
+    <input type="text" id="text1" name="tname1">
+    <br>
+    <br> String_2:
+    <input type="text" id="text2" name="tname2">
+    <br>
+    <br>
+    <button onclick="gfg_Run()"> Compare </button>
+    <p id="GFG_DOWN" style="color:green;
+                            font-size: 20px;
+                            font-weight: bold;"></p>
+
+    <script>
+        // This example compares the 2 same strings (case-sensitive also)
+        // by using the localeCompare() method.
+        var str1 = document.getElementById("text1");
+        var str2 = document.getElementById("text2");
+        var el_down = document.getElementById("GFG_DOWN");
+        function gfg_Run() {
+            var a = str1.value;
+            var b = str2.value;
+            var ans = a.localeCompare(b);
+            var res = "";
+            if(ans == -1) {
+                res = '"' + a + '" comes before "' + b + '"';
+            } else if(ans == 0) {
+                res = 'Both string are same';
+            } else {
+                res = '"' + a + '" comes after "' + b + '"';
+            }
+            el_down.innerHTML = res;
+        }
+
+    </script>
+
+    
+</body>
+</html>

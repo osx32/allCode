@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        let globalLet="This is a global variable";
+        function fun(){
+            let localLet="This is a local variable";
+            console.log(globalLet); //This is a global variable
+            console.log(localLet); //This is a local variable
+        }
+        fun();
+        */
+
+        /*
+        let globalLet="This is a global variable";
+        function fun(){
+            let localLet="This is a local variable";
+        }
+        fun();
+            console.log(globalLet); //This is a global variable
+            console.log(localLet);  //localLet is not defined
+        */
+
+        /*
+        let globalLet="This is a global variable";
+        function fun(){
+            localLet="This is a local variable";
+        }
+
+        fun();
+            console.log(globalLet); //This is a global variable
+            console.log(localLet);  //This is a local variable
+        */
+
+        /*
+        let globalLet="This is a global variable";
+
+        function fun(){
+            let globalLet="This is a local variable";
+        }
+        fun();
+        console.log(globalLet); //This is a global variable
+        */
+
+        /*
+        let globalLet="This is a global variable";
+        function fun(){
+            let globalLet="This is a local variable";
+            console.log(globalLet); //This is a local variable
+        }
+        fun();
+        */
+
+        
+        var globalLet="This is a global variable";
+        function fun(){
+            let globalLet="This is a local variable";
+            console.log(window.globalLet); //This is a global variable
+        }
+        fun();
+        
+
+        /*
+        function fun(){
+            function fun2(){
+                i=100;
+            }
+            fun2();
+            console.log(i); //100
+        }
+        fun();
+        */
+
+        /*
+        function fun(){
+            function fun2(){
+                let i=100;
+            }
+            fun2();
+            console.log(i); //i is not defined
+            
+        }
+        fun();
+        */
+
+        /*
+        function fun(){
+            if(true){
+                let i=100;
+            }
+            console.log(i); //i is not defined
+        }
+        fun();
+        */
+
+    </script>
+
+</body>
+</html>

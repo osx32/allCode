@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration Methods</title>
+</head>
+<body style = "text-align: center;">
+    <!--
+        <h1 style = "color:green;">
+            GeeksForGeeks
+        </h1>
+        <h2>Array.forEach() method</h2>
+        <p>
+            array.forEach() method Calls a function once for every
+            array element.
+        </p>
+        <p id="GFG"></p>
+    -->    
+
+
+    <!--
+    <h1 style = "color:green;">
+        GeeksForGeeks
+    </h1>
+    <h2>Array.some() method</h2>
+    <p>
+        some() methdo checkss some array elements validity according to test
+        condition.
+    </p>
+    <p id="GFG"></p>
+    -->
+
+
+
+    <h1 style = "color:green;">
+        GeeksForGeeks
+    </h1>
+    <h2>Array.map() method</h2>
+    <p>
+        creates an array from calling a specific 
+        function on each item in the parent array.
+    </p>
+    <p id="GFG"></p>
+
+
+
+
+
+
+
+    <script>
+        /*
+        var emptytxt = "";
+        var No = [23, 212, 9, 628, 22314];
+        No.forEach(itrtFunction);
+        document.getElementById("GFG").innerHTML = emptytxt;
+        function itrtFunction(value, index, array) {
+            emptytxt = emptytxt + value +"<br>";
+
+        }*/
+
+
+        /*
+        var numArray = [41, 2, 14, 29, 49];
+        var someOver50 = numArray.some(myFunction);
+        document.getElementById("GFG").innerHTML 
+            = "Some values over 50 is " + someOver50;
+        
+        function myFunction(value, index, array) {
+            return value > 50;
+        }    
+        */
+
+
+
+        var numArray = [1, 2, 3, 4];
+        var numArray2 = numArray.map(multiplyFunction);
+        document.getElementById("GFG").innerHTML = numArray2;
+        function multiplyFunction(value, index, array) {
+            return value + 100;
+        }
+
+
+
+
+
+
+
+
+
+    </script>    
+
+</body>
+</html>

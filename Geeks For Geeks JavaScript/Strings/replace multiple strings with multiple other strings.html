@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace multiple strings with multiple other strings in JavaScript</title>
+</head>
+<body>
+    <p id = 'GFG_UP'></p>
+    <p id = 'GFG_DOWN'></p>
+    <button onclick="GFG_Fun()">click here</button>
+    <script>
+        // JavaScript replace() method
+        // This method searches a string for a defined value, or a regular
+        // expression, and returns a new string with the replaced defined value.
+        var up = document.getElementById('GFG_UP');
+        var down = document.getElementById('GFG_DOWN');
+        var str = "I have a Lenovo Laptop, a Honor Phone, and a Samsung Tab.";
+        var Obj = {
+            Lenovo : "Dell",
+            Honor : "OnePlus",
+            Samsung : "Lenovo"
+        };
+        up.innerHTML = str;
+        function GFG_Fun() {
+            down.innerHTML = str.replace(/Lenovo|Honor|Samsung/gi, function(matched) {
+                return Obj[matched];
+            });
+        }
+
+
+
+
+    
+    
+    </script>
+
+</body>
+</html>

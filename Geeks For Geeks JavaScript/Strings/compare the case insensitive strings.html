@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare the Case Insensitive strings in JavaScript</title>
+</head>
+<body style="text-align:center;">
+    <!--    
+                  string.toUpperCase();
+        Comparing strings in a case-insensitive manner means comparing them
+        without taking care of the uppercase and lowercase letters. 
+
+        To perform this operation the most preferred method is to use either
+         toUpperCase() or toLowerCase() function.
+
+        JavaScript toUpperCase() function: The str.toUpperCase() function 
+        converts the entire string to Upper case. This function does not 
+        affect any of the special characters, digits, and alphabets that 
+        are already in upper case. 
+    -->
+    <!--
+    <h1 style="color:green;">
+        GeeksForGeeks
+    </h1>
+    <h3>
+        JavaScript | Case Insensitive
+        string comparison
+    </h3>
+    <p id="GFG_up" style="color:green;"></p>
+    <button onclick="myGeeks()">
+        Click here
+    </button>
+    <p id="GFG_down" style="color:green;"></p>
+    <script>
+        var str1 = "this is geeksForGeeks";
+        var str2 = "This IS GeeksfOrgeeks";
+        var p_up = document.getElementById("GFG_up");
+        p_up.innerHTML = str1 + "<br>" + str2;
+
+        function myGeeks() {
+            var p_down = document.getElementById("GFG_down");
+            var areEqual = str1.toUpperCase() === str2.toUpperCase();
+            p_down.innerHTML = areEqual;
+        }
+
+    </script>
+    -->
+
+
+
+    <!--
+                str.toLowerCase() 
+        function converts the entire string to lower case. This function does not
+        affect any of the special characters, digits, and alphabets that are 
+        already in lowercase. 
+    -->
+    <!--
+    <h1 style="color:green;">
+        GeeksForGeeks
+    </h1>
+    <h3>
+        JavaScript | Case Insensitive
+        string comparison
+    </h3>
+    <p id="GFG_up" style="color:green;"></p>
+    <button onclick="myGeeks()">
+        Click Here
+    </button>
+    <p id="GFG_down" style="color:green;"></p>
+    <script>
+        var str1 = "this İS geeks";
+        var str2 = "This IS GeeksfOrgeeks";
+        var p_up = document.getElementById("GFG_up");
+        p_up.innerHTML = str1 + "<br>" + str2;
+        function myGeeks() {
+            var p_down = document.getElementById("GFG_down");
+            var areEqual = str1.toLowerCase() === str2.toLowerCase();
+            p_down.innerHTML = areEqual;
+        } 
+    </script>
+    -->
+
+
+    <h1 style="color:green;">
+        GeeksForGeeks
+    </h1>
+    <h3>
+        JavaScript | Case insensitive
+        string comparison
+    </h3>
+    <p id="GFG_up" style="color:green;"></p>
+    <button onclick="myGeeks()">
+        Click here    
+    </button>
+    <p id="GFG_down" style="color:green;"></p>
+    <script>
+        var str1 = "this iS geeks";
+        var str2 = "This IS GeeksfOrgeeks";
+        var p_up = document.getElementById("GFG_up");
+        p_up.innerHTML = str1+ "<br>" + str2;
+        function myGeeks() {
+            var p_down = document.getElementById("GFG_down");
+            var areEqual = str1.localeCompare(str2, undefined, {sensitivity : "accent"});
+            p_down.innerHTML = areEqual === 0 ? true : false;
+        }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

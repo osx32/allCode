@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function hiThere(){
+            alert('Hi there!');
+        }
+        
+       function hov(){
+        var e=document.getElementById('hover');
+        e.style.display='none';
+       }
+       
+        function out(){
+            var e=document.getElementById('hover');
+            e.style.display='none'; 
+       }
+       
+       
+       function focused(){
+        var e=document.getElementById('inp');
+        if(confirm('Got it?')){
+            e.blur();
+        }
+       }
+       */
+
+
+
+    </script>
+</head>
+<body>
+    <!--
+        <button type="button" onclick="hiThere()">Click me event</button>
+    
+    <div id="hover" onmouseover="hov()"
+        style="background-color:green;height:200px;width:200px;"></div>
+        
+    <div id="hover" onmouseout="out()"
+        style="background-color:green;height:200px;width:200px;">
+    </div>
+
+    <input onchange="alert(this.value)" type="number">
+    
+    <img onload="alert('Image completely loaded')"
+        alt="GFG-Logo"
+        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/GeeksforGeeksLogoHeader.png"
+    >
+    
+    <p>Take the focus into the input box below:</p>
+
+    <input id="inp" onfocus="focused()">
+    -->
+    <p>Write something in the input box and then click elsewhere
+        in the document body.</p>
+        <input onblur="alert(this.value)">
+    <script>
+        /*var a=0;
+        var b=0;
+        var c=0;
+        function changeBackground(){
+            var x=document.getElementById('bg');
+            x.style.backgroundColor='rgb('+a+','+b+','+c+')';
+            a+=1;
+            b+=a+1;
+            c+=b+1;
+            if(a>255)a=a-b;
+            if(b>255)b=a;
+            if(c>255)c=b;
+        }
+        */
+       
+
+        
+
+    </script>
+    <!--
+    <input id="bg" onkeyup="changeBackground()"
+        placeholder="write something" style="color:#fff">
+    -->
+
+</body>
+</html>

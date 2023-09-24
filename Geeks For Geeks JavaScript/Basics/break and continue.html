@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JavaScript Break statement
+    </title>
+</head>
+<body style="text-align:center;">
+    <!--
+        <div>
+        <h1>GeeksForGeeks</h1>
+        <h2>JavaScript Break</h2>
+    </div>
+    <p id="GFG"></p>
+    -->
+    <!--
+    <div>
+        <h1>GeeksForGeeks</h1>
+        <h2>javaScript continue</h2>
+    </div>
+    
+    <p id="GFG"></p>
+    -->
+    <!--
+    <h1 style="color:green;">
+        GeeksForGeeks
+    </h1>
+    <h2>JavaScript break</h2>
+    <p id="GFG"></p>
+     Script to use break label
+    -->
+    <!--
+    <div>
+        <h1 style="color:green;">
+            GeeksForGeeks
+        </h1>
+        <h2>JavaScript continue</h2>
+    </div>
+    <p id="GFG"></p>
+
+    Script to use continue label
+    -->
+    <div>
+        <h1 style="color:green;">
+            GeeksForGeeks
+        </h1>
+        <h2>
+            JavaScript No Label
+        </h2>
+        <p id="GFG"></p>
+    </div>
+    <script>
+        /*var content=" ";
+        var i;
+        for(i=1;i<1000;i++){
+            if(i===6){
+                break;
+            }
+            content+="Geeks"+i+"<br>";
+        }
+        document.getElementById("GFG").innerHTML=content;
+        
+
+        var content="";
+        var i;
+        for(i=1;i<7;i++){
+            if(i===4){
+                continue;
+            }
+            content+="Geeks"+i+"<br>";
+        }
+        document.getElementById("GFG").innerHTML=content;
+        
+        
+        var val=["Geeks1","Geeks2","Geeks3",
+                "Geeks4","Geeks5"];
+        var print="";
+
+        breaklabel:{
+            print+=val[0]+"<br>"+val[1]+"<br>";
+            break breaklabel;
+            print+=val[2]+"<br>"+val[3]+"<br>"+val[4];
+        }
+        document.getElementById("GFG").innerHTML=print;
+        */
+
+        /*
+        var val=["Geeks1","Geeks2","Geeks3","Geeks4"];
+        var val1=["Geeks","For","Geeks"];
+        var print="";
+        print+=val1[0]+"<br>";
+        print+=val1[1]+"<br>";
+        print+=val1[2]+"<br>";
+
+        continuelabel:{
+            print+=val[0]+"<br>";
+            print+=val[1]+"<br>";
+            
+            print+=val[2]+"<br>";
+            print+=val[3]+"<br>";
+        }
+        document.getElementById("GFG").innerHTML=print;
+        */
+
+        var val=["Geeks1","Geeks2","Geeks3","Geeks4"];
+        var val1=["Geeks","For","Geeks"];
+        var print="";
+        labelloop:{
+            print+=val1[0]+"<br>";
+            print+=val1[1]+"<br>";
+            print+=val1[2]+"<br>";
+        }
+        print+="<br>";
+        labelloop1:{
+            print+=val[0]+"<br>";
+            print+=val[1]+"<br>";
+            print+=val[2]+"<br>";
+            print+=val[3]+"<br>";
+        }
+        document.getElementById("GFG").innerHTML=
+                print;
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

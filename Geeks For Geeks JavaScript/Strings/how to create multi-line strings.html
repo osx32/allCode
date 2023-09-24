@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create multi-line strings in JavaScript?</title>
+</head>
+<body>
+    <!--
+        Method 1: Multiline-strings are created by using template literals.
+        The strings are delimited using backticks, unlike normal single/double
+        quotes delimiter. 
+    -->
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1>
+    <b>
+        How to create multi-line
+        strings in JavaScript?
+    </b>
+    <div class="multiline"></div>
+    <p>
+        Click on the button to
+        insert multiline text
+    </p>
+    <button onclick="showMultiline()">
+        Click here
+    </button>
+    <script type="text/javascript">
+        function showMultiline() {
+            multilineString = 
+                `<div>
+                    <h3>This is the heading</h3>
+                    <p>
+                        This is a paragraph. This uses
+                        template literals that were
+                        added in ES6 of JavaScript
+                    </p>
+                </div`
+            document.querySelector('.multiline').innerHTML
+                    = multilineString;
+        }
+
+    </script>
+
+    
+</body>
+</html>
